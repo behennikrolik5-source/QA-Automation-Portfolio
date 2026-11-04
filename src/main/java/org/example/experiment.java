@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class experiment {
     public static void main(String[] args) {
-        String hi = "HELLO GIT SUPER SPLIT";
+        String hi = "HELLO GIT SUPER SPLIT WTF";
         String [] n1 = hi.split(" ");
         System.out.println(Arrays.toString(n1));
         StringBuilder q1 = new StringBuilder();
