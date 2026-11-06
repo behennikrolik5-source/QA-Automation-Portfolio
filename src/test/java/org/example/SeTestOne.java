@@ -91,7 +91,7 @@ public class SeTestOne {
         driver.findElement(By.className("shopping_cart_link")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement logoutLink = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.id("cart_item")));
+                ExpectedConditions.visibilityOfElementLocated(By.className("cart_item")));
         List<WebElement> inventoryItems = new ArrayList<>();
         WebElement cardbase = driver.findElement(By.className("cart_item"));
         WebElement cardbaseparams = cardbase.findElement(By.className("cart_quantity"));
@@ -103,7 +103,7 @@ public class SeTestOne {
         assertEquals("Sauce Labs Backpack", itemname);
         WebElement level4 = driver.findElement(By.id("item_0_title_link"));
         WebElement level5 = level4.findElement(By.className("inventory_item_name"));
-        String itemname2 = level3.getText();
+        String itemname2 = level5.getText();
         assertEquals("Sauce Labs Bike Light", itemname2);
 
 
