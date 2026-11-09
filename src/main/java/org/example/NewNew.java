@@ -1,9 +1,8 @@
 package org.example;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 
 public class NewNew {
-    public static void main(String[] args) {
-        char c  ='f';
-        System.out.println(c);
-
-    }
+    private WebDriver
 }
